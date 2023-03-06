@@ -1,6 +1,9 @@
+
+nohup.out
+pytorch_model.bin
+
 *.pyc
 
 log/
 runs/
 wandb/
-nohup.out

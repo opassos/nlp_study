@@ -107,14 +107,18 @@ def get_grouped_params(model, args, no_decay=["bias", "LayerNorm.weight"]):
     return [{'params': params_with_wd, 'weight_decay': args.weight_decay},
             {'params': params_without_wd, 'weight_decay': 0.0}]
 
-def evaluate(model, eval_dataloader, args, accelerator):
+def evaluate(model, eval_dataloader, args, accelerator=None):
     model.eval()
     losses = []
     for step, batch in enumerate(eval_dataloader):
+        #print(step, batch.shape)
         with torch.no_grad():
             outputs = model(batch, labels=batch)
         loss = outputs.loss.repeat(args.valid_batch_size)
-        losses.append(accelerator.gather(loss))
+        if accelerator is not None:
+            losses.append(accelerator.gather(loss))
+        else:
+            losses.append(loss)
         if args.max_eval_steps > 0 and step >= args.max_eval_steps: break
     loss = torch.mean(torch.cat(losses))
     try:

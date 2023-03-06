@@ -34,7 +34,7 @@ config = {
     "gradient_accumulation_steps": 1,
     "max_train_steps": 150000,
     "valid_size": 1000,
-    "max_eval_steps": -1,
+    "max_eval_steps": 1000,
     "seq_length": 256,
     'n_ctx': 256,
     'n_positions': 256,
@@ -114,10 +114,10 @@ for step, batch in enumerate(train_dataloader, start=1):
         logger.info('Evaluating and saving model checkpoint')
         eval_loss, perplexity = evaluate(model, eval_dataloader, args, accelerator)
         log_metrics(step, {'loss/eval': eval_loss, 'perplexity': perplexity}, logger, accelerator, tb_writer)
-        accelerator.wait_for_everyone()
-        # unwrapped_model = accelerator.unwrap_model(model)
-        # if accelerator.is_main_process:
-        #     unwrapped_model.save_pretrained("./")
+        # accelerator.wait_for_everyone()
+        unwrapped_model = accelerator.unwrap_model(model)
+        if accelerator.is_main_process:
+            unwrapped_model.save_pretrained("./")
         #     hf_repo.push_to_hub(commit_message=f'step {step}')
         model.train()
     if completed_steps >= args.max_train_steps:
