@@ -3,3 +3,4 @@
 log/
 runs/
 wandb/
+nohup.out

@@ -42,7 +42,7 @@ config = {
     'n_layer': 6,
     'n_head': 6,
     "seed": 42,
-    "save_checkpoint_steps": 15000,
+    "save_checkpoint_steps": 1500,
     "mixed_precision": 'bf16',
     } 
 
