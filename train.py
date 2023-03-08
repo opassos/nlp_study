@@ -117,7 +117,7 @@ for step, batch in enumerate(train_dataloader, start=1):
         # accelerator.wait_for_everyone()
         unwrapped_model = accelerator.unwrap_model(model)
         if accelerator.is_main_process:
-            unwrapped_model.save_pretrained("./")
+            unwrapped_model.save_pretrained("./model")
         #     hf_repo.push_to_hub(commit_message=f'step {step}')
         model.train()
     if completed_steps >= args.max_train_steps:

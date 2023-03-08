@@ -7,3 +7,4 @@ pytorch_model.bin
 log/
 runs/
 wandb/
+model/
