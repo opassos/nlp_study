@@ -52,6 +52,8 @@ tokenizer = AutoTokenizer.from_pretrained(org + "/" + model_ckpt)
 config = AutoConfig.from_pretrained(
     "gpt2", 
     vocab_size=len(tokenizer), 
+    bos_token_id=len(tokenizer)-1,
+    eos_token_id=len(tokenizer)-1,
     **config
     )
 model = AutoModelForCausalLM.from_config(config)
@@ -118,7 +120,8 @@ for step, batch in enumerate(train_dataloader, start=1):
         unwrapped_model = accelerator.unwrap_model(model)
         if accelerator.is_main_process:
             unwrapped_model.save_pretrained("./model")
-        #     hf_repo.push_to_hub(commit_message=f'step {step}')
         model.train()
     if completed_steps >= args.max_train_steps:
         break
+
+model.save_pretrained("models/" + model_ckpt, push_to_hub=True, organization=org)

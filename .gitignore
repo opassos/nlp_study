@@ -8,4 +8,5 @@ log/
 runs/
 wandb/
 model/
+models/
 my_model/

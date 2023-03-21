@@ -1,0 +1,76 @@
+transformer.wte.weight	torch.Size([7000, 384])	2688000
+transformer.wpe.weight	torch.Size([256, 384])	98304
+transformer.h.0.ln_1.weight	torch.Size([384])	384
+transformer.h.0.ln_1.bias	torch.Size([384])	384
+transformer.h.0.attn.c_attn.weight	torch.Size([384, 1152])	442368
+transformer.h.0.attn.c_attn.bias	torch.Size([1152])	1152
+transformer.h.0.attn.c_proj.weight	torch.Size([384, 384])	147456
+transformer.h.0.attn.c_proj.bias	torch.Size([384])	384
+transformer.h.0.ln_2.weight	torch.Size([384])	384
+transformer.h.0.ln_2.bias	torch.Size([384])	384
+transformer.h.0.mlp.c_fc.weight	torch.Size([384, 1536])	589824
+transformer.h.0.mlp.c_fc.bias	torch.Size([1536])	1536
+transformer.h.0.mlp.c_proj.weight	torch.Size([1536, 384])	589824
+transformer.h.0.mlp.c_proj.bias	torch.Size([384])	384
+transformer.h.1.ln_1.weight	torch.Size([384])	384
+transformer.h.1.ln_1.bias	torch.Size([384])	384
+transformer.h.1.attn.c_attn.weight	torch.Size([384, 1152])	442368
+transformer.h.1.attn.c_attn.bias	torch.Size([1152])	1152
+transformer.h.1.attn.c_proj.weight	torch.Size([384, 384])	147456
+transformer.h.1.attn.c_proj.bias	torch.Size([384])	384
+transformer.h.1.ln_2.weight	torch.Size([384])	384
+transformer.h.1.ln_2.bias	torch.Size([384])	384
+transformer.h.1.mlp.c_fc.weight	torch.Size([384, 1536])	589824
+transformer.h.1.mlp.c_fc.bias	torch.Size([1536])	1536
+transformer.h.1.mlp.c_proj.weight	torch.Size([1536, 384])	589824
+transformer.h.1.mlp.c_proj.bias	torch.Size([384])	384
+transformer.h.2.ln_1.weight	torch.Size([384])	384
+transformer.h.2.ln_1.bias	torch.Size([384])	384
+transformer.h.2.attn.c_attn.weight	torch.Size([384, 1152])	442368
+transformer.h.2.attn.c_attn.bias	torch.Size([1152])	1152
+transformer.h.2.attn.c_proj.weight	torch.Size([384, 384])	147456
+transformer.h.2.attn.c_proj.bias	torch.Size([384])	384
+transformer.h.2.ln_2.weight	torch.Size([384])	384
+transformer.h.2.ln_2.bias	torch.Size([384])	384
+transformer.h.2.mlp.c_fc.weight	torch.Size([384, 1536])	589824
+transformer.h.2.mlp.c_fc.bias	torch.Size([1536])	1536
+transformer.h.2.mlp.c_proj.weight	torch.Size([1536, 384])	589824
+transformer.h.2.mlp.c_proj.bias	torch.Size([384])	384
+transformer.h.3.ln_1.weight	torch.Size([384])	384
+transformer.h.3.ln_1.bias	torch.Size([384])	384
+transformer.h.3.attn.c_attn.weight	torch.Size([384, 1152])	442368
+transformer.h.3.attn.c_attn.bias	torch.Size([1152])	1152
+transformer.h.3.attn.c_proj.weight	torch.Size([384, 384])	147456
+transformer.h.3.attn.c_proj.bias	torch.Size([384])	384
+transformer.h.3.ln_2.weight	torch.Size([384])	384
+transformer.h.3.ln_2.bias	torch.Size([384])	384
+transformer.h.3.mlp.c_fc.weight	torch.Size([384, 1536])	589824
+transformer.h.3.mlp.c_fc.bias	torch.Size([1536])	1536
+transformer.h.3.mlp.c_proj.weight	torch.Size([1536, 384])	589824
+transformer.h.3.mlp.c_proj.bias	torch.Size([384])	384
+transformer.h.4.ln_1.weight	torch.Size([384])	384
+transformer.h.4.ln_1.bias	torch.Size([384])	384
+transformer.h.4.attn.c_attn.weight	torch.Size([384, 1152])	442368
+transformer.h.4.attn.c_attn.bias	torch.Size([1152])	1152
+transformer.h.4.attn.c_proj.weight	torch.Size([384, 384])	147456
+transformer.h.4.attn.c_proj.bias	torch.Size([384])	384
+transformer.h.4.ln_2.weight	torch.Size([384])	384
+transformer.h.4.ln_2.bias	torch.Size([384])	384
+transformer.h.4.mlp.c_fc.weight	torch.Size([384, 1536])	589824
+transformer.h.4.mlp.c_fc.bias	torch.Size([1536])	1536
+transformer.h.4.mlp.c_proj.weight	torch.Size([1536, 384])	589824
+transformer.h.4.mlp.c_proj.bias	torch.Size([384])	384
+transformer.h.5.ln_1.weight	torch.Size([384])	384
+transformer.h.5.ln_1.bias	torch.Size([384])	384
+transformer.h.5.attn.c_attn.weight	torch.Size([384, 1152])	442368
+transformer.h.5.attn.c_attn.bias	torch.Size([1152])	1152
+transformer.h.5.attn.c_proj.weight	torch.Size([384, 384])	147456
+transformer.h.5.attn.c_proj.bias	torch.Size([384])	384
+transformer.h.5.ln_2.weight	torch.Size([384])	384
+transformer.h.5.ln_2.bias	torch.Size([384])	384
+transformer.h.5.mlp.c_fc.weight	torch.Size([384, 1536])	589824
+transformer.h.5.mlp.c_fc.bias	torch.Size([1536])	1536
+transformer.h.5.mlp.c_proj.weight	torch.Size([1536, 384])	589824
+transformer.h.5.mlp.c_proj.bias	torch.Size([384])	384
+transformer.ln_f.weight	torch.Size([384])	384
+transformer.ln_f.bias	torch.Size([384])	384
